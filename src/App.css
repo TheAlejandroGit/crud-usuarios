@@ -1,38 +1,117 @@
-.App {
+*{
+  box-sizing: border-box;
   text-align: center;
+  margin: 0;
+  padding: 0;
+ 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-image: linear-gradient(to right top, #c463e7, 
+  #c15ee4, #be58e0, #bc53dd, #b94dd9, #ad4bce, #a249c3, 
+  #9746b8, #8244a3, #6f428d, #5e3e78, #4e3962);;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.card{
+  padding: 10px;
+  background-color: white;
+  margin: 15px auto;
+  width: 500px;
+  list-style: none;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  
+}
+
+.card p{
+  margin: 10px;
+}
+
+.card button{
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  
+}
+
+.buttonTrash{
+  color: rgb(89, 3, 3);
+
+}
+
+.buttonTrash:hover{
+  color: red;
   }
+  .buttonTrash:active{
+    color: rgb(89, 3, 3);
+  }
+
+  .buttonEdit{
+    color: rgb(49, 46, 46);
+  }
+  .buttonEdit:hover{
+    color: black;
+  }
+
+  .buttonEdit:active{
+    color: rgb(49, 46, 46);
+  }
+
+
+.form{
+  background-color: white;
+  width: 500px;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 15px auto;
+}
+.form h1{
+  margin: 15px;
+  display: flex;
+}
+.input-container{
+  display: flex;
+  align-items: center;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.wrap-container{
+  margin-left: 20px;
+}
+
+.form input{
+  background-color: rgb(221, 215, 215);
+  margin: 2px;
+  padding: 5px;
+  border-radius: 15px;
+  border: gray;
+}
+.form button{
+  margin: 5px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 15px;
+  background-color: rgb(4, 133, 133);
+  border: rgb(4, 133, 133);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.form button:hover{
+  border: rgb(1, 28, 28);
+  background-color: rgb(1, 28, 28);
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form button:active{
+  background-color: rgb(4, 133, 133);
+  border: rgb(4, 133, 133);
+}
+
+.buttons{
+  display: flex;
+  align-items: center;
+  justify-content:center ;
 }
